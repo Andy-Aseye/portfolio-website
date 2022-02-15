@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+background: black;
+overflow-x: hidden;
+margin: 0;
+width: 100%;
+object-fit: cover;
+}
+
+.navbar {
+    z-index: 1;
+    position: absolute;
+    top: -98vh;
+    display: flex;
+   
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+}
+
+.background{
+  background-repeat: no-repeat;
+  background-size: 100%;
+object-fit: cover;
+width: 100%;
+height: 100vh;
+object-position: center;
+}
+
+.background::after {
+    content: "";
+    background: linear-gradient(to top, black, transparent, black);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    z-index: 0;
+    object-fit: cover;
+    z-index: 0;
+    }
+
+.header {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-text {
+    z-index: 1;
+    color: rgb(133, 130, 130);
+  
+}
+
+.hero-texts{
+    position: absolute;
+    top: 30vh;
+    left: 100px;
+    width: 90%;
+}
+
+.hero-text h1 {
+    font-size: 8.4rem;
+    font-weight: 700;
+}
+
+.hero-text h3 {
+    font-size: 15px;
+    font-family: 'Satisfy', cursive;
+    font-weight: 700;
+    color: rgb(155, 152, 152);
+}
+
+.second-col {
+    padding-top: 140px;
+    padding-left: 150px;
+    margin-left: 90px;
+    
+}
+
+.second-col-text{
+    width: 22rem;
+    color: white;
+}
+
+
+
+.intro-text {
+    display: block;
+    width: 19rem;
+    font-size: 14px;
+    margin-top: 6rem;
+    font-family: 'Catamaran', sans-serif;
+    color: rgb(175, 173, 173);
+
+}
+
+
+
+.about-area {
+    background-color: black;
+    color: white;
+    padding: 5rem 3rem;
+
+}
+
+.styling {
+    background-color: #ccff15;
+    width: 90px;
+    height: 2px;
+    margin: 12px auto 24px auto;
+}
+
+.about-area p {
+    line-height: 1.9rem;
+}
+
+#me-pic{
+border-radius: 6px;
+}
+
+button {
+    border: solid 2px #ccff15;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+#hero-img {
+    height: 100vh;
+    width: 110%;
+    object-fit: cover;
+}
+
+.projects-area{
+    background-color: black;
+    color: rgb(252, 248, 248)
+}
+
+#projects-header {
+    font-size: 3rem;
+}
+
+.projects-line {
+    background-color: #ccff15;
+    width: 90px;
+    height: 2px;
+    margin-top: 12px;
+}
+
+
+.qoute{
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
+.card{
+    height: 17rem;
+}
+
+.website-pic{
+    object-fit: cover;
+}
+
+.container-project{
+    position: relative;
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-project:hover .card{
+    filter: blur(20px);
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+
+.container-project .card:hover
+{
+    filter: blur(0px);
+    transform: scale(1.1);
+    opacity: 1;
+   
+}
+
+.container-project .card{
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background: linear-gradient(30deg, rgb(27, 27, 27), rgb(51, 51, 51));
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgb(27, 27, 27);
+    transition: 0.5s;
+
+}
+
+.container-project .card .circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: black;
+    clip-path: circle(180px at center 0);
+    text-align: center;
+}
+
+.container-project .card .circle h2 {
+    color: white;
+    font-size: 4.5em;
+    padding: 30px 0;
+}
+
+.container-project .card .content{
+    position: absolute;
+    bottom: 0px;
+   padding: 20px;
+   height: 240px;
+    text-align: center;
+}
+
+.container-project .card .content {
+    color: rgb(230, 227, 227);
+}
+
+.container-project .card .content a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: black;
+    color: rgb(238, 238, 238);
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+
+}
+
+.container-project .card:nth-child(1) .circle,
+.container-project .card:nth-child(1) .content a 
+{
+    background: rgb(167, 1, 167);
+}
+
+.container-project .card:nth-child(2) .circle,
+.container-project .card:nth-child(2) .content a 
+{
+    background: rgb(31, 129, 31);
+}
+
+.container-project .card:nth-child(3) .circle,
+.container-project .card:nth-child(3) .content a 
+{
+    background: rgb(27, 20, 85);
+}
+
+
+
+.container-project .card:nth-child(1):hover
+{
+    background-image: url(pictures/GameX-img.png);
+    object-position: center;
+    object-fit: cover;
+}
+
+
+.container-project .card:nth-child(2):hover
+{
+   background: rgb(153, 185, 153);
+}
+
+
+.container-project .card:nth-child(3):hover
+{
+    background-image: url(pictures/Beach.jpg);
+    object-position: left;
+    object-fit: cover;
+}
+
+
+/*.accordion-item{
+    color: rgb(37, 37, 37);
+} */
+
+.general-facts {
+    background-color: black;
+}
+
+.general-facts-container {
+    margin-top: 2rem;
+}
+
+.container-project .card .content h3{
+    font-family: 'Alfa Slab One';
+    font-weight: 400;
+}
+
+
+
+/*Media queries//Responsiveness*/
+@media (max-width: 529px) {  
+    #me-pic{
+        margin-bottom: 3rem;
+        width: 24rem;
+    }
+    .about-row{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width: 430px), (max-width: 980px) {
+    .container-project{
+        flex-wrap: wrap;
+    }
+}
+ 
+@media (max-width: 530px) {
+    .about-row{
+        display: flex;
+        flex-direction: column;
+    }
+    #me-pic{
+        width: 24rem;
+        justify-self: center;
+    }
+
+    .container-project{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navbarNav{
+        background-color: rgb(10, 10, 10);
+        opacity: 0.3;
+        position: absolute;
+        top: 0px;
+        width: 90%;
+        height: 30vh;
+    }
+
+    #brief-text {
+        font-size: 0.8rem;
+    }
+  
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (max-width: 950px) {  
+    .second-col {
+        display: none;
+    }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 918.4px) { 
+   
+    .about-area{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #me-pic{
+        width: 24rem;
+    }
+}
+
+@media (max-width: 985px) {
+    #me-pic{
+        width: 24rem;
+    }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 992px) {  
+    #me-pic{
+        width: 28rem;
+    }
+}
